@@ -1,0 +1,23 @@
+										Tehnologia OPENGL
+	OpenGL este o bibliotecă grafică și un API (Interfață de Programare a Aplicațiilor) extrem de utilizat în industria jocurilor video, simulărilor, și în alte aplicații ce implică grafică 3D. A fost dezvoltat de OpenGL Architecture Review Board (ARB) și oferă o platformă standard pentru dezvoltarea aplicațiilor grafice accelerate pe hardware.
+	Pe baza succesului ale OpenGL, mai multe tehnologii au fost dezvoltate precum:
+-	OpenGL ES : este o variant ușoară a OpenGL pentru dispositive mobile sisteme incorporate precum telefoane, tablete, console, etc;
+-	WebGL : este o extensie OpenGL care permite rularea graficii 3D in browser-ul web fără plugn-uri;
+-	Vulkan : este succesorul lui OpenGL, este o variată un API de nivel scăzut care oferă un control mult mai detaliat asupra hardware-ului graphic și optimizează comunicarea între software și GPU;
+-	OpenCL :  se ocupă cu calculul paralel pe CPU, GPU, FPGA, este folosit adesea înpreună cu OpenGL pentru a accelera operațiile grafice și de calcul;
+Tehnologia OpenGL, cu toate că este foarte utilă, are și puncta tari și pucte slabe:
+Puncte tari:
+-	Portabilitate : codul scris pentru OpenGL poate fi  rulat pe diverse sisteme de operare;
+-	Performanță : este optimizat pentru a obține performanțe ridicate în randarea grafică;
+-	Versatil: functionalități diverse pentru texturi, shading, transformări gradice, etc;
+Puncte sclabe :
+-	Complexitate : pentru începători poate părea complex;
+-	Driver-e : compatibilitate dintre sisteme și driver.
+Modelul de Automat cu Stări Finite în OpenGL:
+OpenGL folosește un model de automat cu stări finite pentru a gestiona starea mașinii de randare. Acest model include diferite stări cum ar fi starea de desenare, starea de shading, etc. Schimbarea stării în OpenGL este realizată prin apeluri de funcții specifice care modifică starea internă a API-ului.
+Impactul Modelului de Automat cu Stări Finite în Procesul de Randare:
+1.  Organizarea Randării: Modelul de automat cu stări finite permite OpenGL să organizeze procesul de randare în pași bine definiți. De exemplu, în timpul randării unei primitive grafice, OpenGL trece prin diferite stări cum ar fi transformarea geometriei, aplicarea shader-elor, rasterizarea și generarea pixelilor.
+2.  Control Detaliat: Dezvoltatorii pot controla fiecare aspect al procesului de randare prin configurarea stărilor OpenGL. Acest lucru permite optimizări fine și implementarea de efecte specifice prin utilizarea adecvată a funcțiilor API-ului.
+3.  Complexitate Redusă pentru Dezvoltatori: Chiar dacă modelul poate părea complicat la început, oferă o abordare structurată și eficientă pentru gestionarea stării mașinii de randare. Acest lucru poate facilita dezvoltarea de aplicații grafice complexe și performante.
+
+În concluzie, OpenGL și tehnologiile derivate din acesta au adus o contribuție semnificativă în evoluția graficii computerizate și a simulărilor 3D.
